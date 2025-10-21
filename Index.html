@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Tradings Fx Clone | CFD Trading — Trading on Stocks, Gold, Oil, Indices</title>
+    <style>
+        /* Reset and global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #1a1a2e;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 1.5em;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #007bff, #6610f2);
+            color: white;
+            text-align: center;
+            padding: 150px 0 100px;
+            margin-top: 60px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .live-data {
+            background: rgba(255,255,255,0.2);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #007bff;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .plan-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .plan-card h4 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .step {
+            text-align: center;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .testimonial {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #007bff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5em; }
+            .grid { grid-template-columns: 1fr; }
+            .steps { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Cosmic Tradings Fx</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#plans">Plans</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Innovative Trading Platform</h2>
+            <h1># Trade Global Markets With Confidence</h1>
+            <p>Access advanced trading tools for Forex, Cryptocurrencies, Commodities, Indices, and more with competitive spreads and lightning-fast execution.</p>
+            <div class="live-data">LIVE BTC/USD $111,100.00 -1.21% Real-time data • • Updated</div>
+            <button>Get Started</button>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <h2 class="section-title">Why Trade With Us</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Trading Tools</h3>
+                <p>Plan your trades effectively with our wide range of free professional trading tools</p>
+            </div>
+            <div class="card">
+                <h3>Trading Products</h3>
+                <p>Diverse opportunities to optimize your trading portfolio across multiple markets</p>
+            </div>
+            <div class="card">
+                <h3>Trading Platforms</h3>
+                <p>Powerful platforms to suit all trading styles and needs on any device</p>
+            </div>
+            <div class="card">
+                <h3>Funding Methods</h3>
+                <p>Multiple quick, easy and secure methods to fund your trading account</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Diverse Trading Products</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Forex</h3>
+                    <p>Trade 70+ major, minor & exotic currency pairs with competitive spreads and conditions</p>
+                    <button>Explore Forex</button>
+                </div>
+                <div class="card">
+                    <h3>Shares</h3>
+                    <p>Access hundreds of public companies from the US, UK, Germany and more markets</p>
+                    <button>Explore Shares</button>
+                </div>
+                <div class="card">
+                    <h3>Energies</h3>
+                    <p>Discover opportunities on UK & US Crude Oil as well as Natural Gas with tight spreads</p>
+                    <button>Explore Energies</button>
+                </div>
+                <div class="card">
+                    <h3>Indices</h3>
+                    <p>Trade major and minor Index CFDs from around the globe with competitive conditions</p>
+                    <button>Explore Indices</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="crypto" class="container">
+        <h2 class="section-title">Cryptocurrency Trading</h2>
+        <p style="text-align: center; font-size: 1.2em; margin-bottom: 40px;">Trade the world's most popular digital assets with competitive spreads and advanced tools</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Bitcoin</h3>
+                <p>Bitcoin is a decentralized digital currency without a central bank or administrator...</p>
+                <button>Trade BTC/USD</button>
+            </div>
+            <div class="card">
+                <h3>Ethereum</h3>
+                <p>Ethereum is a decentralized, open-source blockchain with smart contract functionality...</p>
+                <button>Trade ETH/USD</button>
+            </div>
+            <div class="card">
+                <h3>Ripple</h3>
+                <p>Ripple is a real-time gross settlement system, currency exchange and remittance network...</p>
+                <button>Trade XRP/USD</button>
+            </div>
+            <div class="card">
+                <h3>Cardano</h3>
+                <p>Cardano is a proof-of-stake blockchain platform created by Ethereum co-founder...</p>
+                <button>Trade ADA/USD</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Trading Plans</h2>
+            <p style="text-align: center; font-size: 1.2em; margin-bottom: 40px;">Choose the perfect plan that suits your investment strategy and financial goals</p>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <h4>Test</h4>
+                    <p>150% / Trade</p>
+                    <p>Min: $500, Max: $2999</p>
+                    <button>Select Plan</button>
+                </div>
+                <div class="plan-card">
+                    <h4>Beginner Plan</h4>
+                    <p>16% / Trade</p>
+                    <p>Min: $100, Max: $25000</p>
+                    <button>Select Plan</button>
+                </div>
+                <div class="plan-card">
+                    <h4>Standard Plan</h4>
+                    <p>2.5% / Trade</p>
+                    <p>Min: $25000, Max: $100000</p>
+                    <button>Select Plan</button>
+                </div>
+                <!-- Add more plans as needed; truncated for brevity -->
+                <div class="plan-card">
+                    <h4>Crypto Elite Plan</h4>
+                    <p>8.0% / Trade</p>
+                    <p>Min: $7500, Max: $30000</p>
+                    <button>Select Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">About Us</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Cosmic Tradings Fx has become one of the most reputable brokers in the industry, offering traders CFDs across Forex, Equities, Commodities and Futures...</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Personalized Trading</h3>
+                <p>Do you want to risk a little or a lot? Do you want gains in the short term or are you playing a longer game?...</p>
+            </div>
+            <div class="card">
+                <h3>Complete Control</h3>
+                <p>With the right tools, information and access to all the world's currencies, Cosmic Tradings Fx puts you in control...</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Deposit</h3>
+                    <p>Open real account and add funds. We work with more than 20 payment systems for your convenience.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Trade</h3>
+                    <p>Trade any of 100 assets and stocks. Use technical analysis and trade the news for better results.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Withdraw</h3>
+                    <p>Get funds easily to your bank card or e-wallet with our fast and secure withdrawal process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="container">
+        <h2 class="section-title">Client Testimonials</h2>
+        <div class="grid">
+            <div class="testimonial">
+                <p>"Since I started using Cosmic Tradings Fx, I have been earning like never before. You guys have the best signals."</p>
+                <cite>- Malcom47, Verified Trader</cite>
+            </div>
+            <div class="testimonial">
+                <p>"I already got more than $200,000 within a month investing with Cosmic Tradings Fx. Will again invest soon."</p>
+                <cite>- Christy, Elite Investor</cite>
+            </div>
+            <div class="testimonial">
+                <p>"I was able to earn additional $30,000 to my profit. It's amazing, you guys are the best, keep it up."</p>
+                <cite>- Linday8, Professional Trader</cite>
+            </div>
+            <div class="testimonial">
+                <p>"This was a very easy process and I received my funds quickly as I needed them! Highly recommend Cosmic Tradings Fx."</p>
+                <cite>- Crian, Active Trader</cite>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 Cosmic Tradings Fx Clone. Powered by Grok. All rights reserved.</p>
+            <p>Bitcoin • Ethereum • Dogecoin • Bitcoin Cash • Tether • Binance Coin • Litecoin</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+          </html>
